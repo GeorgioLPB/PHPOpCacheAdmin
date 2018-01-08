@@ -17,6 +17,22 @@ $('#filtering_policy').click(function() {
 	});
 });
 
+$('#invalidation_policy').click(function() {
+	$.ajax({
+		url: "ajax/invalidation_policy.php",
+	}).done(function( data ){
+		$('#container_main').html( data ) ;
+	});
+});
+
+$('#optimization_policy').click(function() {
+	$.ajax({
+		url: "ajax/optimization_policy.php",
+	}).done(function( data ){
+		$('#container_main').html( data ) ;
+	});
+});
+
 /* Storage Pie */
 
 var ctxopcachehitrate = document.getElementById("chart-opcachehitrate").getContext('2d');

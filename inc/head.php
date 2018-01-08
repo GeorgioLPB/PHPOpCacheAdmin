@@ -24,6 +24,8 @@
 				<ul class="nav navbar-nav">
 					<li><a href="#storage_policy" id='storage_policy'>Storage Policy</a></li>
 					<li><a href="#filtering_policy" id='filtering_policy'>Filtering Policy</a></li>
+					<li><a href="#invalidation_policy" id='invalidation_policy'>Invalidation Policy</a></li>
+					<li><a href="#optimization_policy" id='optimization_policy'>Optimization policy</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions<span class="caret"></span></a>
 						<ul class="dropdown-menu">
