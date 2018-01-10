@@ -36,12 +36,12 @@ $('#optimization_policy').click(function() {
 /* Storage Pie */
 
 var ctxopcachehitrate = document.getElementById("chart-opcachehitrate").getContext('2d');
-var myChart = new Chart(ctxopcachehitrate, {
+var myChart_opcachehitrate = new Chart(ctxopcachehitrate, {
 	type: 'doughnut',
 	data: {
 		labels: [ "hit success", "hit misses" ],
 		datasets: [{
-			data: [ $('#opcache_hit_rate').val(), ( 100 - $('#opcache_hit_rate').val() ) ],
+			data: [ $('#opcache_hit_rate').val(), ( Math.round( 100 * ( 100 - $('#opcache_hit_rate').val() ) ) / 100 ) ],
 			backgroundColor: [
 				'rgba(92, 184, 92)',
 				'rgba(240, 173, 78)'
@@ -53,7 +53,7 @@ var myChart = new Chart(ctxopcachehitrate, {
 });
 
 var ctxstorage = document.getElementById("chart-storage").getContext('2d');
-var myChart = new Chart(ctxstorage, {
+var myChart_storage = new Chart(ctxstorage, {
 	type: 'pie',
 	data: {
 		labels: [ "Used Memory", "Free Memory", "Wasted Memory" ],
@@ -71,7 +71,7 @@ var myChart = new Chart(ctxstorage, {
 });
 
 var ctxisb = document.getElementById("chart-isb").getContext('2d');
-var myChart = new Chart(ctxisb, {
+var myChart_isb = new Chart(ctxisb, {
 	type: 'pie',
 	data: {
 		labels: [ "Used Memory", "Free Memory" ],
@@ -88,7 +88,7 @@ var myChart = new Chart(ctxisb, {
 });
 
 var ctxks = document.getElementById("chart-ks").getContext('2d');
-var myChart = new Chart(ctxks, {
+var myChart_ks = new Chart(ctxks, {
 	type: 'pie',
 	data: {
 		labels: [ "Cached Keys", "Free Keys" ],

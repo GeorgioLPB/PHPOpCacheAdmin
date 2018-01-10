@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Milonga');
 body {
 	padding-top: 50px;
+}
+
+.navbar {
+        font-family: 'Milonga', cursive;
+}
+ul {
+	font-family: 'PT Mono', monospace;
+}
+
+table {
+	font-family: 'PT Mono', monospace;
+}
+
+td.right {
+	text-align: right;
+}
+
+div#canvas {
+	width: 250px;
+        margin:0 auto;
+}
+
+h3 {
+	font-size: 16px;
+        font-weight: bold;
 }

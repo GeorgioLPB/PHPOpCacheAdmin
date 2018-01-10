@@ -48,4 +48,21 @@ function formatBoolean( $value )
 	if( $value ) { return 'ON' ; }
 	else{return 'OFF' ; }
 }
+
+function nbTime( $value )
+{
+	$bit = array(
+		'y' => $value / 31556926 % 12,
+		'w' => $value / 604800 % 52,
+		'd' => $value / 86400 % 7,
+		'h' => $value / 3600 % 24,
+		'm' => $value / 60 % 60,
+		's' => $value % 60
+        );
+	foreach( $bit as $k => $v )
+        if( $v > 0 ) $ret[] = $v . $k ;
+
+	//var_dump( $bit ) ;
+	return join( ' ', $ret ) ;
+}
 ?>
