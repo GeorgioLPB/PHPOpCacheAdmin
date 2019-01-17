@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-        font-family: 'Milonga', cursive;
+	font-family: 'Milonga', cursive;
 }
 ul {
 	font-family: 'PT Mono', monospace;
@@ -19,6 +19,14 @@ td.right {
 	text-align: right;
 }
 
+td.center {
+	text-align: center;
+}
+
+td.disabled {
+	background-color: #D3D3D3;
+}
+
 div#canvas {
 	width: 250px;
         margin:0 auto;
@@ -27,4 +35,8 @@ div#canvas {
 h3 {
 	font-size: 16px;
         font-weight: bold;
+}
+
+span.full_path{
+	display: none;
 }

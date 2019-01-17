@@ -106,6 +106,14 @@ var myChart_ks = new Chart(ctxks, {
 
 /* Actions */
 
+$('#list_of_cached_scripts').click(function() {
+	$.ajax({
+		url: "ajax/list_of_cached_scripts.php",
+	}).done(function( data ){
+		$('#container_main').html( data ) ;
+	});
+});
+
 $('#get_configuration').click(function() {
 	$.ajax({
 		url: "ajax/get_configuration.php",
@@ -121,4 +129,36 @@ $('#get_status').click(function() {
 		$('#container_main').html( data ) ;
 	});
 });
+
+$('#other').click(function() {
+	$.ajax({
+		url: "ajax/other.php",
+	}).done(function( data ){
+		$('#container_main').html( data ) ;
+	});
+});
+
+$('#reset_cache').click(function() {
+	$.ajax({
+		url: "ajax/reset_cache.php",
+	}).done(function( data ){
+		$('#container_main').html( data ) ;
+	});
+});
+
+/* List of cached scripts */
+
+function show_full_path( id )
+{
+	//alert( id ) ;
+	//alert( $('#full_path_' + id + '_ctl').val() ) ;
+	$('#full_path_'+id).show() ;
+}
+
+function hide_full_path( id )
+{
+	//alert( id ) ;
+	//alert( $('#full_path_' + id + '_ctl').val() ) ;
+	$('#full_path_'+id).hide() ;
+}
 

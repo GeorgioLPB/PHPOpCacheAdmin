@@ -1,4 +1,7 @@
-<?php include( 'config.php' ) ; ?><!DOCTYPE html>
+<?php
+	include( 'config.php' ) ;
+	include( 'header_security.php' ) ;
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -6,6 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>PHPOpCacheAdmin</title>
 	<link href="<?php echo $cdn_depot[$cdn]['bootstrap_css'] ; ?>" rel="stylesheet" />
+	<link href="<?php echo $cdn_depot[$cdn]['datatables_css'] ; ?>" rel="stylesheet" />
+	<link href="<?php echo $cdn_depot[$cdn]['fontawesome_css'] ; ?>" rel="stylesheet" />
 	<link href="css/PHPOpCacheAdmin.css" rel="stylesheet" />
 </head>
 <body>
@@ -29,11 +34,13 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions<span class="caret"></span></a>
 						<ul class="dropdown-menu">
+							<li><a href="#" id='list_of_cached_scripts'>List of cached scripts</a></li>
 							<li><a href="#" id='get_configuration'>Get Configuration</a></li>
 							<li><a href="#" id='get_status'>Get Status</a></li>
-                                                        <li role="separator" class="divider"></li>
-                                                        <li><a href="#">Reset Cache</a></li>
-                                                </ul>
+							<li><a href="#other" id='other'>Other Configuration</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#" id='reset_cache'>Reset Cache</a></li>
+						</ul>
 					</li>
 				</ul>
 			</div>

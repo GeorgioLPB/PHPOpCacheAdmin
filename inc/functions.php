@@ -65,4 +65,5 @@ function nbTime( $value )
 	//var_dump( $bit ) ;
 	return join( ' ', $ret ) ;
 }
+
 ?>
