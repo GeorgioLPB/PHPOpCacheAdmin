@@ -12,7 +12,7 @@
 	<link href="<?php echo $cdn_depot[$cdn]['bootstrap_css'] ; ?>" rel="stylesheet" />
 	<link href="<?php echo $cdn_depot[$cdn]['datatables_css'] ; ?>" rel="stylesheet" />
 	<link href="<?php echo $cdn_depot[$cdn]['fontawesome_css'] ; ?>" rel="stylesheet" />
-	<link href="css/PHPOpCacheAdmin.css" rel="stylesheet" />
+	<link href="<?php echo ( $use_minify ) ? 'css/PHPOpCacheAdmin.min.css' : 'css/PHPOpCacheAdmin.css' ; ?>" rel="stylesheet" />
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">

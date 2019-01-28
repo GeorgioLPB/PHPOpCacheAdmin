@@ -2,6 +2,7 @@
 define( 'PHP_MANUEL_URL', 'http://php.net/manual/en/opcache.configuration.php#ini.opcache.' ) ;
 
 $cdn = 'default' ;
+$use_minify = true ;
 
 $date_format = 'Y-m-d H:i:s' ;
 //$date_format = 'd/m/Y H:i:s' ;
