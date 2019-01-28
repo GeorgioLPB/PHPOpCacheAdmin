@@ -2,7 +2,7 @@
 
 A clean and responsive interface for Zend OPcache information, showing statistics, settings and cached files, and providing a real-time update for the information.
 
-## Using :
+## Using with CDN :
 
 * [Bootstrap](https://getbootstrap.com/) v3.3.7
 * [jQuery](https://jquery.com/) v3.2.1
