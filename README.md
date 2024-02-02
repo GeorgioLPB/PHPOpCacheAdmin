@@ -12,4 +12,4 @@ A clean and responsive interface for Zend OPcache information, showing statistic
 
 ## Overview :
 
-![Overview](https://cdn.georgio.fr/assets/images/PHPOpCacheAdmin-Screenshot.png)
+![Overview](https://raw.githubusercontent.com/GeorgioLPB/PHPOpCacheAdmin/master/img/Screenshot.png)
